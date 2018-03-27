@@ -1,0 +1,75 @@
+
+
+/* Artur Rudyk styles*/
+.section-title {
+    padding: 40px 0px 40px 0px;
+    text-align: center;
+    width: 100%;
+}
+
+.line {
+    height: 2px;
+    width: 40px;
+    background-color: #a80c5d;
+    border: none;
+    margin: 0px auto;
+}
+
+.subtitle {
+    width: 50%;
+}
+
+.headline {
+    margin: 20px auto;
+}
+
+.service-list{
+    border: 2px green solid;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.service-item{
+    border: 1px solid black;
+    margin: 60px 0px 30px 0px;
+    max-width: 40%;
+}
+
+.service-image-wrapper {
+    width: 40px;
+    height: 100%;
+    border: 1px solid green;
+    display: inline-block;
+}
+
+.service-content {
+
+    float: right;
+    max-width: 90%;
+
+}
+
+.service-title {
+    display: inline-block;
+}
+
+.service-icon {
+    width: 30px;
+    height: 30px;
+    border: 3px solid #a80c5d;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+}
+
+/* Artur Rudyk styles*/
+
+
+
+
+
+
