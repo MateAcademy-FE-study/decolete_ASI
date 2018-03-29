@@ -1,6 +1,15 @@
 
 
 /* Artur Rudyk styles*/
+
+.services {
+    font-family: sans-serif;
+}
+
+.comments {
+    font-family: sans-serif;
+}
+
 .section-title {
     padding: 40px 0px 40px 0px;
     text-align: center;
@@ -15,6 +24,10 @@
     margin: 0px auto;
 }
 
+.title {
+
+}
+
 .subtitle {
     width: 50%;
 }
@@ -23,18 +36,29 @@
     margin: 20px auto;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 .service-list{
-    border: 2px green solid;
+    border: 1px green solid;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
-.service-item{
+.service-item-wrapper {
     border: 1px solid black;
-    margin: 60px 0px 30px 0px;
-    max-width: 40%;
+    width: 50%;
+    padding: 60px 60px 30px 80px;
+    box-sizing: border-box;
+}
+
+.service-item {
+    border: 1px solid black;
+    box-sizing: border-box;
+
 }
 
 .service-image-wrapper {
@@ -42,17 +66,36 @@
     height: 100%;
     border: 1px solid green;
     display: inline-block;
+    padding-right: 20px;
+    vertical-align: top;
 }
 
 .service-content {
+    display: inline-block;
+    width: calc(100% - 70px);
+    text-align: left;
 
-    float: right;
-    max-width: 90%;
+}
 
+.service-headline {
+    padding: 10px 0px;
 }
 
 .service-title {
     display: inline-block;
+    margin: 0px;
+    width: 60%;
+    font-size: 15px;
+}
+
+.service-text {
+    padding: 20px 0px 0px 0px;
+}
+
+.service-text-list {
+    margin : 0px;
+    padding-left: 15px;
+    list-style-type: circle;
 }
 
 .service-icon {
@@ -60,10 +103,64 @@
     height: 30px;
     border: 3px solid #a80c5d;
     border-radius: 20px;
+    float: right;
     display: flex;
     align-items: center;
     justify-content: center;
     float: right;
+}
+
+.comments-content {
+    width: 100%;
+    padding-bottom: 60px;
+}
+
+.comments-list {
+     width: 100%;
+     display: flex;
+     justify-content: space-between;
+
+}
+
+.comment-item {
+    width: 30%;
+    border: 1px solid black;
+    padding-top: 30px;
+}
+
+.comment-body {
+    margin: 25px 0px 30px 0px;
+}
+
+.author-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin: 10px 0px;
+}
+
+.author-name {
+    padding: 10px 0px;
+    margin: 0px;
+}
+
+.author-position {
+    padding-top: 10px;
+    padding-bottom: 0px;
+    margin: 0px;
+}
+
+.button-more {
+    margin-top: 70px;
+    text-align: center;
+}
+
+.img-more-wrapper {
+    display: inline-block;
+}
+
+.button-more-text {
+    display: inline-block;
 }
 
 /* Artur Rudyk styles*/
