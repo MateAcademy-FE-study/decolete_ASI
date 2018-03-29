@@ -25,6 +25,9 @@ html, body, ul{
     display: table;
 }
 .mainscreen{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
 	height: 100vh;
 	margin: 0;
 	padding: 0;
@@ -32,18 +35,39 @@ html, body, ul{
 	background: url(images/man_photo.png);
 }
 
+.language{
+	float: right;
+}
+
+
+
+div.cs-select:focus {
+	outline: none; /* For better accessibility add a style for this in your skin */
+}
+
+
 .navigation{
 	width: 80%;
 	margin: 0 auto;
 	font-family: GothamProMed; 
 	padding: 50px 0;
-}
+	position: absolute;
+	top: 10%;
+	left: 50%;
+	margin-right: -50%;
+    transform: translate(-50%, -50%);}
+
+
+ .navigation__menu{
+ 	float: right;
+ }
+
 .navigation__logo{
 	float:left;
 }
 .navigation__item{
 	list-style-type: none; 
-	float: right;
+	float: left;
 	margin: 0;
 	padding: 5px 0;
 	padding-left: 20px;
@@ -59,8 +83,6 @@ html, body, ul{
 .navigation__anchor:hover{
 color:#a70c5d;
 }
-
-
 
 .navigation__lang{
 	float: right;
@@ -92,6 +114,7 @@ color:#a70c5d;
 
 .slogan{
 	width:50%;
+
 }
 
 .slogan__header{
@@ -99,35 +122,79 @@ color:#a70c5d;
 	 font-family: GothamProBold; 
 	 font-size: 30px;
 }	
+
+
+.slogan__header:after{
+	width: 2em;
+	height: 1px;
+	border-bottom: 1px solid #a70c5d ;
+	content: "";
+	padding-top: 30px;
+	display: block;
+	margin: 0;
+}
+
 .slogan__text{
 		font-family: GothamPro;
 		font-size: 15px;
 		line-height: 2em;
 		padding-bottom: 60px;
+		padding-right: 40px;
 }
-.slogan__line{
-	width: 3em;
-	height: 1px;
-	border-bottom: 1px solid #a70c5d ;
 
-}
 
 .slogan__button{
-	color:#fff;
-	background-color: #a70c5d;
-	padding: 20px;
+	color:#a70c5d;
+	background-color: #fff;
+	padding: 10px;
 	text-transform: uppercase;
 	text-decoration: none;
 	font-family: GothamProBold; 
-	font-size: 11px;
+	font-size: 12px;
 	border-radius: 50px;
+	border: 3px solid  #a70c5d;
+	display: flex;
+	justify-content:space-around ;
+	width: 170px;
+	align-items: center;
 }
+
+.slogan__button:hover{
+	background-color: #a70c5d;
+	color: #fff;
+
+}
+
+
 
 .slogan__icon{
-	font-size: 2em;
-	padding-right: 0.75em;
+	font-size: 3em;
 }
 
-.slogan__button__big{
-float: right;
+.mainscreen__absolute_button{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	font-size: 30px;
+	background-color: #fff;
+	margin: 0;
+	padding: 30px 40px;
+	border-radius: 50%;
+	color: #a70c5d;
+	margin-right: -50%;
+    transform: translate(-50%, -50%);
 }
+
+
+.mainscreen__absolute_button:hover{
+	background-color: #a70c5d;
+	color: #fff;
+}
+
+
+.mainscreen__absolute_button i{
+	padding: 0;
+	margin: 0;
+}
+
+
