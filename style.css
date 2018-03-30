@@ -1,4 +1,7 @@
-body{
+/*          Ilja Boltenkow footer style.css           */
+
+
+.footer{
     margin: 0;
     width: 100%;
 }
@@ -7,7 +10,7 @@ body{
     src: url(fonts/GothamPro-Light.ttf);
 }
 
-.h1{
+.header__h1{
     text-align: center;
     font-size: 28px;
     font-family: "GothamPro-Light";
@@ -15,31 +18,31 @@ body{
     font-weight: bold;
     padding: 40px 40px 0px; 
 }
-.line{
+.header__line{
     height: 2px;
     width: 40px;
     background-color: #a80c5d;
     border: none;
     margin: 0px auto;
 }
-form{
+.footerbody{
     display: block;
      margin: 0 auto;
     width: 60%;
     margin-bottom: 40px;
 }
-.FormsAndInformation{
+.footerbody__formsandinformation{
     padding-top: 40px;
     width: 100%;
     min-height: 350px;
     
 }
-.information{
+.formsandinformation__information{
     width:47%;
     float:left;
     margin-right: 3%;
 }
-input[type="text"]{
+.information__content[type="text"]{
      width: 100%;
      border: none;
      border-bottom: 2px solid #dcdcdc;
@@ -50,7 +53,7 @@ input[type="text"]{
      font-weight: 800;
      text-transform: uppercase;
 }
-input[type="text"]:focus {
+.information__content[type="text"]:focus {
     width: 100%;
     border: none;
     border-bottom: 2px solid #a80c5d; 
@@ -58,11 +61,11 @@ input[type="text"]:focus {
     outline: 0;
     outline-offset: 0;
 }
-.dropdown{
+.formsandinformation__dropdown{
     width:100%;
     margin-top: 50px;
 }
-.dropbtn {
+.dropdown__dropbtn{
     background-color: #fff;
     color: #727478;
     width:100% !important;
@@ -77,7 +80,7 @@ input[type="text"]:focus {
 	background-position: 95%;
 
 }
-.dropdown-content {
+.dropdown__dropdowncontent{
 	display: none;
 	background-color: #fff;
 	border: 1px solid #dbdbdb;
@@ -87,13 +90,13 @@ input[type="text"]:focus {
     font-weight: 800;
 }
 
-.dropdown-content li {
+.dropdown__dropdowncontent li {
     color: #727478;
     text-decoration: none;
     display: block;
 }
 
-.dropdown:hover .dropdown-content {
+.formsandinformation__dropdown:hover .dropdown__dropdowncontent{
     display: block;
 }
 
@@ -127,14 +130,14 @@ input[type="text"]:focus {
 		padding-left: 25px;
 	}
 
-.OtherInformation{
+.footerbody__otherinformation{
 
     margin-top: 25px;
     width: 47%;
     float: left;
     margin-left: 3%;
 }
-.DopInfa{
+.otherinformation__dopinfa{
     font-size: 15px;
     font-weight: 800;
     font-family: "GothamPro-Light";
@@ -175,12 +178,19 @@ button[type="button"]{
    
     margin: 20px auto;
 }
-.line1{
-    width: 100%;
-    height: 1px;
-    margin-top: 50px;
+
+
+.footer__ftr{
+    font-family: "GothamPro-Light";
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    color: #000000;
 }
-.Pravo{
+.footer__ftr a{
+    color: #a80c5d;
+}
+.ftr__pravo{
     text-transform: uppercase;
     font-family: "GothamPro-Light";
     text-align: center;
@@ -190,17 +200,7 @@ button[type="button"]{
     margin-top:50px;
     margin-bottom: 20px;
 }
-.Adress{
-    font-family: "GothamPro-Light";
-    text-align: center;
-    font-size: 15px;
-    font-weight: 500;
-    color: #000000;
-}
-.Adress a{
-    color: #a80c5d;
-}
-.Buttons{
+.ftr__buttons{
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -208,7 +208,8 @@ button[type="button"]{
     width: 100%;
     margin-top: 20px;
 }
-.Buttons a{
+
+.ftr__buttons a{
     width: 55px;
     height: 55px;
     float: left;
@@ -252,21 +253,4 @@ button[type="button"]{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*          Ilja Boltenkow footer style.css           */
