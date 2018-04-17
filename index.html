@@ -54,7 +54,7 @@
 				<hr class="line">
 				<p class="subtitle headline"><span class="bold">Pravo agency</span> выполняет роль юристов-аутсорсеров, надежно прикрывая правовой тыл вашей деятельности</p>
 			</div>
-			<div class="service-list">
+			<div class="service-list" id="service-list">
 				<div class="service-item-wrapper">
 					<div class="service-item">
 						<div class="service-image-wrapper">
@@ -74,7 +74,7 @@
 						<div class="service-content">
 							<div class="service-headline">
 								<h3 class="service-title">НАВЕДЕНИЕ ПОРЯДКА В ДЕЛАХ</h3>
-								<div class="service-icon">i</div>
+								<div id="service-icon" class="service-icon">i</div>
 							</div>
 							<div class="service-text">
 								<ul class="service-text-list">
@@ -83,7 +83,16 @@
 									<li>легализация зависших платежей</li>
 								</ul>
 							</div>
-							<div></div>
+							<div class="service-hidden">
+								<ul class="service-text-list">
+									<li>соблюдение необходимых формальностей и процедур</li>
+									<li>наличие всех оригинальных договоров акта</li>
+									<li>легализация зависших платежей</li>
+									<li>соблюдение необходимых формальностей и процедур</li>
+									<li>наличие всех оригинальных договоров акта</li>
+									<li>легализация зависших платежей</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -120,7 +129,16 @@
 									<li>легализация зависших платежей</li>
 								</ul>
 							</div>
-							<div></div>
+							<div class="service-hidden">
+								<ul class="service-text-list">
+									<li>соблюдение необходимых формальностей и процедур</li>
+									<li>наличие всех оригинальных договоров акта</li>
+									<li>легализация зависших платежей</li>
+									<li>соблюдение необходимых формальностей и процедур</li>
+									<li>наличие всех оригинальных договоров акта</li>
+									<li>легализация зависших платежей</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -166,7 +184,16 @@
 									<li>легализация зависших платежей</li>
 								</ul>
 							</div>
-							<div></div>
+							<div class="service-hidden">
+								<ul class="service-text-list">
+									<li>соблюдение необходимых формальностей и процедур</li>
+									<li>наличие всех оригинальных договоров акта</li>
+									<li>легализация зависших платежей</li>
+									<li>соблюдение необходимых формальностей и процедур</li>
+									<li>наличие всех оригинальных договоров акта</li>
+									<li>легализация зависших платежей</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -226,7 +253,16 @@
 									<li>легализация зависших платежей</li>
 								</ul>
 							</div>
-							<div></div>
+							<div class="service-hidden">
+								<ul class="service-text-list">
+									<li>соблюдение необходимых формальностей и процедур</li>
+									<li>наличие всех оригинальных договоров акта</li>
+									<li>легализация зависших платежей</li>
+									<li>соблюдение необходимых формальностей и процедур</li>
+									<li>наличие всех оригинальных договоров акта</li>
+									<li>легализация зависших платежей</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -311,7 +347,7 @@
 					</div>
 				</div>
 				<div class="button-more">
-					<div class="img-more-wrapper"><img src="images/circle-arrows.jpg"></div>
+					<div class="img-more-wrapper"><img src="images/circle-arrows.jpg" ></div>
 					<h4 class="button-more-text">ЗАГРУЗИТЬ ЕЩЕ</h4>
 				</div>
 			</div>
@@ -375,6 +411,20 @@
 </section>
 <!--          Ilja Boltenkow footer html           -->
 
+	<script>
+		var serviceList = document.getElementsByClassName('service-list').item(0);
+        serviceList.onclick = function(event) {
+            var target = event.target;
+            if (target.className == 'service-icon') {
+                var classlist = target.parentElement.parentElement.lastElementChild.classList;
+                if (!classlist.contains("service-active")) {
+                    classlist.add("service-active");
+				} else {
+                    classlist.remove("service-active");
+				}
+            }
+        }
+	</script>
     </body>
 </html>
 

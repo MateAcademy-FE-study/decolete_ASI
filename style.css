@@ -279,7 +279,6 @@ color:#a70c5d;
     display: inline-block;
     width: calc(100% - 70px);
     text-align: left;
-
 }
 
 .service-headline {
@@ -305,6 +304,17 @@ color:#a70c5d;
 
 .service-text-list li{
     padding-left: 10px;
+}
+
+.service-hidden {
+    background-color: #ffffff;
+    height: auto;
+    overflow: hidden;
+    padding-bottom: 10px;
+    display: none;
+}
+.service-active {
+    display: block; !important;
 }
 
 .service-icon {
@@ -404,14 +414,18 @@ color:#a70c5d;
 .button-more {
     margin-top: 70px;
     text-align: center;
-    font-size:  10px;
+    font-size:  16px;
     font-weight: bold;
+
 }
 
+.img-more-wrapper img{
+    height: 15px;
+    width: 15px;
+}
 .img-more-wrapper {
     display: inline-block;
 }
-
 .button-more-text {
     display: inline-block;
 }
