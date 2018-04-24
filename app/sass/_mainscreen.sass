@@ -1,31 +1,29 @@
 
-
-
-.main-information
-	margin-top: $headerheight
-	margin-bottom: 80px
-	padding: 0 60px
-	color: $fontcolor
-	height: calc(100vh - 100px) //заменить на переменну
-	box-size: border-box
-	width: 50%
-
 .slogan
-	display: flex
-	flex-direction: column
-	justify-content: space-around
-	align-items: flex-start
-
-
+	height: calc(100vh - 100px)
+	color: $fontcolor
+	width: 40%
+	padding-top: 200px
+	padding-left: $border
 
 .slogan__header
 	font-family: GothamPro-Bold
 	font-size: 30px
+	padding-bottom: 50px
+	&:after
+		display: block
+		width: 2em
+		border-bottom: 2px solid $pinkcolor
+		content: ''
+		padding-top: 20px
+		padding-bottom: 20px
+
 
 .slogan__text
 	font-family: GothamPro
 	font-size: 15px
 	line-height: 2em
+	padding-bottom: 60px
 
 
 .slogan__button
@@ -40,6 +38,11 @@
 	display: flex
 	align-items: center
 	justify-content: space-around
+	width: 150px
+	padding-left: 20px
+	padding-right: 20px
+	padding-top: 8px
+	padding-bottom: 8px
 	&:hover
 		background-color: $pinkcolor
 		color: #fff
@@ -47,3 +50,6 @@
 .slogan__icon
 	font-size: 3em
 
+
+//@media screen and (min-width: 320px) 
+	

@@ -26,7 +26,7 @@ div.cs-skin-underline {
 	font-weight: bold;
 }
 
-.cs-skin-underline > span::after {
+/*.cs-skin-underline > span::after {
 	font-family: 'icomoon';
 	content: '\e003';
 	right: 0.25em;
@@ -40,9 +40,9 @@ div.cs-skin-underline {
 	-webkit-transform: translate3d(0,-50%,0) rotate3d(0,0,1,270deg);
 	transform: translate3d(0,-50%,0) rotate3d(0,0,1,270deg);
 }
-
+*/
 .cs-skin-underline .cs-options {
-	background: #bbc7c8;
+	background: transparent;
 	opacity: 0;
 	-webkit-transition: opacity 0.3s 0.4s, visibility 0s 0.7s;
 	transition: opacity 0.3s 0.4s, visibility 0s 0.7s;
@@ -73,14 +73,14 @@ div.cs-skin-underline {
 	opacity: 0;
 }
 
-.cs-select .cs-selected span::after {
+/*.cs-select .cs-selected span::after {
 	font-family: 'icomoon';
 	content: '\e010';
 	opacity: 1;
 	-webkit-transition: opacity 0.3s 0.7s;
 	transition: opacity 0.3s 0.7s;
 }
-
+/*
 .cs-skin-underline ul span::before {
 	content: '';
 	position: absolute;
@@ -94,7 +94,7 @@ div.cs-skin-underline {
 	-webkit-transition: -webkit-transform 0.3s;
 	transition: transform 0.3s;
 }
-
+*/
 .cs-skin-underline.cs-active ul span,
 .cs-skin-underline.cs-active ul span::before {
 	opacity: 1;
@@ -143,6 +143,6 @@ div.cs-skin-underline {
 .cs-skin-underline .cs-options li span:hover,
 .cs-skin-underline .cs-options li.cs-focus span,
 .cs-skin-underline li.cs-selected span {
-	color: #566473;
+	color: #3f4147;
 	background: transparent;
 }
