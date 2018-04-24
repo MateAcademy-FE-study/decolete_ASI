@@ -44,6 +44,7 @@ body
 	&:hover
 		background-color: $pinkcolor
 		color: #fff
+		box-shadow: 0 0 10px rgba(0,0,0,0.5); 
 
 .navigation
 	position: absolute
@@ -53,14 +54,15 @@ body
 	height: $headerheight
 	padding: 0 $border
 	display: flex
-	justify-content: space-between
+	justify-content: flex-end
 	align-items: center
 
+.logo
+	margin-right: auto
 
 .navigation__menu
 	display: flex
 	justify-content: flex-start
-	pagging-left: 50px
 	flex-wrap: wrap
 
 .navigation__item
@@ -78,6 +80,7 @@ body
 		color: $pinkcolor
 
 .navigation__lang
+	margin-left: 250px
 	font-family: GothamPro-Medium
 	font-size: 12px !important
 	color: $pinkcolor
