@@ -1,0 +1,25 @@
+{
+  "name": "decolete_asi",
+  "version": "1.0.0",
+  "private": "true",
+  "description": "[Link](https://mateacademy-fe-study.github.io/decolete_ASI/)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MateAcademy-FE-study/decolete_ASI.git"
+  },
+  "author": "ASI",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MateAcademy-FE-study/decolete_ASI/issues"
+  },
+  "homepage": "https://github.com/MateAcademy-FE-study/decolete_ASI#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  }
+}

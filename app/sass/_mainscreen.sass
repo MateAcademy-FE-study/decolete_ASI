@@ -1,0 +1,82 @@
+
+.slogan
+	height: calc(100vh - 200px)
+	color: $fontcolor
+	width: 35%
+	padding-top: $headerheight
+	padding-bottom: 80px
+	padding-left: $border
+	display: flex
+	flex-wrap: wrap
+	overflow: hidden
+
+
+.slogan__header
+	font-family: GothamPro-Bold
+	font-size: 30px
+	align-self: flex-start
+	margin: 0
+	&:after
+		display: block
+		width: 2em
+		border-bottom: 2px solid $pinkcolor
+		content: ''
+		padding-top: 40px
+
+
+.slogan__text
+	font-family: GothamPro
+	font-size: 15px
+	line-height: 2em
+	align-self: center
+
+
+.slogan__button
+	font-family: GothamPro-Black
+	color: #fff
+	background-color: $pinkcolor
+	text-transform: uppercase
+	font-size: 11px
+	text-decoration: none
+	margin-bottom: 80px
+	border-radius: 50px
+	display: flex
+	align-items: center
+	justify-content: space-around
+	width: 150px
+	padding-left: 20px
+	padding-right: 20px
+	padding-top: 8px
+	padding-bottom: 8px
+	align-self: flex-end
+	&:hover
+		box-shadow: 0 0 10px rgba(0,0,0,0.5); 
+
+.slogan__icon
+	font-size: 3em
+
+@media screen and (max-width: 954px) 
+	.slogan
+		width: 80%
+		justify-content: center
+		margin: 0 auto
+		text-align: center
+		padding-left: 0
+	.mainscreen
+		background: none
+		background-color: $mainscreen-fone
+	.mainscreen__button
+		display: none
+	.slogan__button
+		margin: 0 auto
+		align-self: flex-end
+	.slogan__header
+		margin: 0
+	.slogan__header:after
+		margin: 0 auto
+	.navigation
+		flex-wrap: wrap
+	.logo
+		align-self: center
+	.navigation__menu
+		align-self: center
