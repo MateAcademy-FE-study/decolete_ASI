@@ -1,8 +1,8 @@
 
 .slogan
-	height: calc(100vh - 200px)
+	//height: calc(100vh - 200px)
 	color: $fontcolor
-	width: 35%
+	//width: 35%
 	padding-top: $headerheight
 	padding-bottom: 80px
 	padding-left: $border
@@ -53,30 +53,101 @@
 		box-shadow: 0 0 10px rgba(0,0,0,0.5); 
 
 .slogan__icon
-	font-size: 3em
+	height: 3em
+.slogan__icon
+	.st0
+        fill: none
+        stroke: $whitecolor
+        stroke-width: 3
+        stroke-linecap: round
+        stroke-linejoin: round
+        stroke-miterlimit: 10
 
-@media screen and (max-width: 954px) 
-	.slogan
-		width: 80%
-		justify-content: center
-		margin: 0 auto
-		text-align: center
-		padding-left: 0
+
+.slogan__icon        
+    .st1
+    	fill: none
+   		stroke: $whitecolor
+   		stroke-width: 3
+   		stroke-miterlimit: 10
+
+
+@media (max-width: 767.98px)
 	.mainscreen
 		background: none
 		background-color: $mainscreen-fone
 	.mainscreen__button
 		display: none
-	.slogan__button
-		margin: 0 auto
-		align-self: flex-end
-	.slogan__header
-		margin: 0
-	.slogan__header:after
-		margin: 0 auto
+	.navigation
+		height: $headerheightxs;
+		padding: 0 $borderxs;
+	.slogan
+		padding: 0 $borderxs;
+		padding-top: $headerheightxs;
+		margin: 0 auto;
 	.navigation
 		flex-wrap: wrap
+		text-align: center;
 	.logo
-		align-self: center
+		margin-top: 15px;
+		margin-left: $borderxs;
+		position: absolute;
+		top: 0;
+		left: 0;
 	.navigation__menu
-		align-self: center
+		padding-top: 50px;
+		width: 100%;
+	.navigation__item
+		width: 100%;
+		padding-bottom: 20px;
+		margin: 0 auto;
+	.navigation__item:last-child
+		padding-bottom: 0;
+	.navigation__lang
+		position: absolute !important
+		top: 0
+		right: 20px
+		margin-right: calc($borderxs - 20px);
+		margin-top: 15px;
+	.slogan
+		display: block
+	.slogan__header
+		margin: 0 auto
+		text-align: center;
+		&:after
+			margin: 0 auto;
+			margin-bottom: 30px;
+	.slogan__text
+		margin: 0 auto
+		margin-bottom: 35px;
+		text-align: center;
+	.slogan__button
+		width: 80%;
+		justify-content: center;
+		margin-left: auto;
+		margin-right: auto;
+	.slogan__icon
+		margin-right: 15px;
+
+
+@media (min-width: 768px) and(max-width: 991.98px)
+	.mainscreen
+		background-size: 100%
+		background-color: $mainscreen-fone
+		height: 100vh
+	.navigation
+		flex-wrap: wrap
+	.slogan
+		width: 40%
+		paddin-left: $borderm;
+		padding-bottom: 0;
+	.mainscreen__button
+		opacity: 0.5;
+	.navigation
+		padding: 0 $borderm;
+
+@media (min-width: 992px) 
+	.mainscreen
+		height: 100vh
+	.slogan
+		width: 35%
