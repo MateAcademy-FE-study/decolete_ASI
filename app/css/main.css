@@ -144,7 +144,9 @@ body {
 }
 
 .slogan {
+  min-height: calc(100vh - 225px);
   color: #3f4147;
+  margin-top: 25px;
   padding-top: 150px;
   padding-bottom: 80px;
   padding-left: 100px;
@@ -182,7 +184,7 @@ body {
   text-transform: uppercase;
   font-size: 11px;
   text-decoration: none;
-  margin-bottom: 80px;
+  margin-bottom: 50px;
   border-radius: 50px;
   display: flex;
   align-items: center;
@@ -317,8 +319,7 @@ body {
 
 @media (min-width: 992px) {
   .slogan {
-    width: 35%;
-    display: block;
+    width: 38%;
     padding-bottom: 0;
   }
   .mainscreen {
