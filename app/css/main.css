@@ -295,6 +295,7 @@ body {
 
 @media (min-width: 768px) and (max-width: 991.98px) {
   .mainscreen {
+    min-height: 100vh;
     background-size: 100%;
     background-color: #f5f5f5;
   }
@@ -320,4 +321,294 @@ body {
     display: block;
     padding-bottom: 0;
   }
+  .mainscreen {
+    min-height: 100vh;
+  }
+}
+
+.footer {
+  width: 100%;
+  margin: 0;
+}
+
+.caption {
+  text-align: center;
+  font-size: 15px;
+  font-family: GothamPro-Light;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #3f4147;
+}
+
+.line {
+  height: 2px;
+  width: 40px;
+  background-color: #a80c5d;
+  border: none;
+  margin: 0px auto;
+}
+
+.footerbody {
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.leftpart {
+  display: block;
+  float: left;
+  width: 47%;
+  margin-right: 3%;
+  margin-top: 30px;
+}
+
+form {
+  width: 100%;
+}
+
+.information {
+  margin-bottom: 40px;
+}
+
+input[type='text'] {
+  resize: none;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #dcdcdc;
+  font-size: 15px;
+  font-family: GothamPro;
+  font-weight: 400;
+  color: #727478;
+  padding-top: 10px;
+  transition: border 0.5s;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+
+input[type='text']:focus {
+  outline: none;
+  border-bottom: 2px solid #a80c5d;
+}
+
+.dropdown__select {
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
+}
+
+label.selectGeneral {
+  background-image: url(../images/arrow.png);
+  background-repeat: no-repeat;
+  background-position: 95% 50%;
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 50px;
+  font-weight: normal;
+  margin: 2px 0;
+  border: 2px solid #d6d6d6;
+  border-radius: 0;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-family: GothamPro;
+  color: #3f4147;
+  font-weight: 400;
+}
+
+label.selectGeneral:before {
+  content: attr(placeholder);
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  max-width: 100%;
+  height: 40px;
+  padding-top: 5px;
+  padding-left: 10px;
+  text-align: left;
+  line-height: 34px;
+  white-space: nowrap;
+  color: #adadad;
+  overflow-x: hidden;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 15px;
+  font-family: GothamPro;
+  color: #3f4147;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+label.selectGeneral:after {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 34px;
+  height: 40px;
+  text-align: center;
+  line-height: 31px;
+  background-color: #ffffff;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+label.selectGeneral label {
+  display: inline-block;
+  min-width: 100%;
+  height: 40px;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 40px;
+  white-space: nowrap;
+  padding: 0 10px;
+  background-color: #ffffff;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+label.selectGeneral input,
+label.selectGeneral label {
+  display: none;
+}
+
+label.selectGeneral div {
+  min-width: 100%;
+  max-height: 500px;
+  overflow-x: hidden;
+}
+
+label.selectGeneral input[type="radio"]:checked ~ div {
+  position: absolute;
+  top: 40px;
+  z-index: 999;
+  overflow-y: auto;
+  box-shadow: -2px 0 0 #d6d6d6, 3px 0 0 #d6d6d6;
+  border-top: 2px solid #d6d6d6;
+  border-bottom: 2px solid #d6d6d6;
+}
+
+label.selectGeneral input[type="radio"]:checked ~ div > label,
+label.selectGeneral input[type="radio"]:checked + label {
+  display: block;
+}
+
+label.selectGeneral input[type="radio"]:checked ~ div > label:hover {
+  color: #a80c5d;
+}
+
+label.selectGeneral input[type="radio"]:not(:checked) ~ div > input[type="radio"]:checked + label {
+  position: relative;
+  z-index: -1;
+}
+
+.otherinf {
+  width: 47%;
+  margin-left: 3%;
+  float: right;
+  margin-top: 55px;
+  margin-bottom: 0px;
+}
+
+.otherinf__form {
+  font-family: GothamPro;
+  color: #3f4147;
+  font-weight: 400;
+}
+
+textarea {
+  font-family: GothamPro;
+  color: #3f4147;
+  font-size: 15px;
+  color: #9fa0a3;
+  margin-top: 7px;
+  height: 252px;
+  border: 2px solid #dcdcdc;
+  transition: border 0.5s;
+  resize: none;
+  margin-bottom: 150px;
+}
+
+textarea:focus {
+  outline: none;
+  border: 2px solid #a80c5d;
+}
+
+button[type="button"] {
+  display: block;
+  padding: 20px 60px 20px 60px;
+  background-color: #a80c5d;
+  border-radius: 40px;
+  color: #ffffff;
+  font-family: "GothamPro-Light";
+  font-size: 13px;
+  border: 0;
+  font-weight: 900;
+  text-transform: uppercase;
+  clear: both;
+  margin: 20px auto;
+}
+
+.adress {
+  font-family: GothamPro;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  color: #000000;
+  margin-top: 50px;
+}
+
+.adress a {
+  color: #a80c5d;
+}
+
+.pravo {
+  text-transform: uppercase;
+  font-family: GothamPro;
+  text-align: center;
+  font-size: 12px;
+  color: #000000;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.footer__social {
+  display: flex;
+  justify-content: center;
+  color: #c5c5c5;
+}
+
+.footer__social a {
+  color: #c5c5c5;
+}
+
+.footer__network {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #c5c5c5;
+  border-radius: 50%;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 5px;
+  padding-top: 9px;
+}
+
+.footer__network:hover {
+  border-color: #336bbc;
+  color: #336bbc;
+}
+
+.p2015 {
+  font-size: 12px;
+  text-align: center;
+  font-family: GothamPro-Light;
+  color: #3f4147;
 }

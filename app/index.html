@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -21,7 +22,7 @@
             <svg class="mainscreen__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 23.8 29.3" style="enable-background:new 0 0 23.8 29.3;" xml:space="preserve">
                 <polygon class="st0" points="21.5,14.8 3.1,27.2 3.1,2.4 " />
             </svg>
-            </a>
+        </a>
         <header>
             <nav class="navigation">
                 <?xml version="1.0" encoding="utf-8"?>
@@ -488,83 +489,109 @@
     </section>
     <!--          Ilja Boltenkow footer index.html           -->
     <section class="footer">
-        <div class="footer__header">
-            <section class="header">
-                <h1 class="header__h1">Запрос на услуги</h1>
-                <hr class="header__line">
-            </section>
+        <div class="caption">
+            <h2 class="caption__text">Запрос на услуги</h2>
+            <hr class="line">
         </div>
-        <form class="footerbody">
-            <div class="footerbody__formsandinformation">
-                <div class="formsandinformation__information">
-                    <p>
-                        <input class="information__content" type="text" placeholder="Имя и фамилия" required>
-                    </p>
-                    <p>
-                        <input class="information__content" type="text" placeholder="Телефон*" required>
-                    </p>
-                    <p>
-                        <input class="information__content" type="text" placeholder="E-mail*" required>
-                    </p>
-                    <p>
-                        <input class="information__content" type="text" placeholder="Сайт" required>
-                    </p>
-                    <div class="formsandinformation__dropdown">
-                        <button class="dropdown__dropbtn">Меня интересует</button>
-                        <div class="dropdown__dropdowncontent">
-                            <ul>
-                                <li>&nbsp;&nbsp;&nbsp;Наведение порядка в делах</li>
-                                <li>&nbsp;&nbsp;&nbsp;Правовое сопровождение деятельности</li>
-                                <li>&nbsp;&nbsp;&nbsp;Оптимизация договорных отношений</li>
-                                <li>&nbsp;&nbsp;&nbsp;Разработка договоров</li>
-                            </ul>
-                        </div>
+
+        <section class="footerbody">
+            <div class='leftpart'>
+                <form>
+                    <div class="information">
+                        <p><input type="text" placeholder="Имя и фамилия"></p>
+                        <p><input type="text" placeholder="Телефон*" required></p>
+                        <p><input type="text" placeholder="E-mail*" required></p>
+                        <p><input type="text" placeholder="Сайт"></p>
                     </div>
-                </div>
-                <div class="footerbody__otherinformation">
-                    <span class="otherinformation__dopinfa">Дополнительная информация</span>
-                    <textarea type="text" placeholder="Введите текст..."></textarea>
+                </form>
+                <div class='dropdown'>
+                    <div class='dropdown__select'>
+                        <label class="selectGeneral" placeholder="Меня интересует">
+  <input type="radio" name="OS">
+
+  <div>
+    <input
+      type="radio"
+      name="OS"
+      value="Linux"
+      id="OS[Linux]"
+    >
+    <label for="OS[Linux]">○&nbsp;&nbsp;&nbsp;Наведение порядка в делах</label>
+
+
+                        <input type="radio" name="OS" value="Windows" id="OS[Windows]">
+                        <label for="OS[Windows]">○&nbsp;&nbsp;&nbsp;Правовое сопровождение деятельности</label>
+
+                        <input type="radio" name="OS" value="Other" id="OS[Other]">
+                        <label for="OS[Other]">○&nbsp;&nbsp;&nbsp;Оптимизация договорных отношений</label>
+
+                        <input type="radio" name="OS" value="Other" id="OS[Other]">
+                        <label for="OS[Other]">○&nbsp;&nbsp;&nbsp;Разработка договоров</label>
+                    </div>
+                    </label>
                 </div>
             </div>
-            <button type="button">Отправить</button>
-        </form>
-        <hr color="#f0f0f0">
-        <section class="footer__ftr">
-            <h1 class="ftr__pravo">Pravo agency</h1>
+            </div>
+            <div class="otherinf">
+                <span class="otherinf__form">Дополнительная информация</span>
+                <textarea type="text" placeholder="Введите текст..."></textarea>
+            </div>
+
+        </section>
+
+        <button type="button">Отправить</button>
+        <section class="adress">
+            <h3 class="pravo">Pravo agency</h3>
             <p>01001, Киев, ул.Костельная, 9, оф.8</p>
             <p>+380 (67) 324 10 10</p>
             <p><a><u>hello@pravo.agency</u></a></p>
-            <div class="ftr__buttons">
-                <a id="fb" href="https://uk-ua.facebook.com/"></a>
-                <a id="tw" href="https://twitter.com/?lang=ru"></a>
-                <a id="in" href="https://www.instagram.com/?hl=ru"></a>
+
+            <div class="footer__social ">
+                <a href="#" class="footer__link">
+                    <div class="footer__network">
+                        <span class="fab fa-facebook-f"></span></div>
+                </a>
+                <a href="#" class="footer__link">
+                    <div class="footer__network">
+                        <span class="fab fa-twitter"></span>
+                    </div>
+                </a>
+                <a href="#" class="footer__link">
+                    <div class="footer__network">
+                        <span class="fab fa-linkedin-in"></span></div>
+                </a>
             </div>
+
+
             <p class="p2015">&copy;2015, Pravo agency</p>
         </section>
+
     </section>
     <!--          Ilja Boltenkow footer html           -->
     <script>
-    var serviceList = document.getElementsByClassName('service-list').item(0);
-    serviceList.onclick = function(event) {
-        var target = event.target;
-        if (target.className == 'service-icon') {
-            var classlist = target.parentElement.parentElement.lastElementChild.classList;
-            if (!classlist.contains("service-active")) {
-                classlist.add("service-active");
-            } else {
-                classlist.remove("service-active");
+        var serviceList = document.getElementsByClassName('service-list').item(0);
+        serviceList.onclick = function(event) {
+            var target = event.target;
+            if (target.className == 'service-icon') {
+                var classlist = target.parentElement.parentElement.lastElementChild.classList;
+                if (!classlist.contains("service-active")) {
+                    classlist.add("service-active");
+                } else {
+                    classlist.remove("service-active");
+                }
             }
         }
-    }
+
     </script>
     <script src="js/classie.js"></script>
     <script src="js/selectFx.js"></script>
     <script>
-    (function() {
-        [].slice.call(document.querySelectorAll('select.cs-select')).forEach(function(el) {
-            new SelectFx(el);
-        });
-    })();
+        (function() {
+            [].slice.call(document.querySelectorAll('select.cs-select')).forEach(function(el) {
+                new SelectFx(el);
+            });
+        })();
+
     </script>
 </body>
 
