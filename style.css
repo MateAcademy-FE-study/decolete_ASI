@@ -237,6 +237,7 @@ color:#a70c5d;
     box-sizing: border-box;
     width: 70%;
     margin: 0px 10% 0px 20%;
+    min-width: 300px;
 }
 
 .service-item:hover .service-icon {
