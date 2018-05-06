@@ -1,0 +1,114 @@
+$mainscreen-fone: #f5f5f5
+$headerheight: 150px
+$headerheightxs: 250px
+$fontcolor: #3f4147
+$pinkcolor: #a70c5d
+$border: 100px
+$borderxs: 40px
+$borderm: 60px
+$whitecolor: #ffffff
+
+//$main-information-height: calc(100vh - $headerheight);
+
+@include font-face(GothamPro-Medium, "../fonts/GothamPro-Medium", 400, normal, woff);
+@include font-face(GothamPro-Bold, "../fonts/GothamPro-Bold", 400, normal, woff);
+@include font-face(GothamPro, "../fonts/GothamPro", 400, normal, woff);
+@include font-face(GothamPro-Black, "../fonts/GothamPro-Black", 400, normal, woff);
+
+body
+	padding: 0
+	margin: 0
+
+.header
+	position: absolute
+	height: $headerheight
+.mainscreen
+	//height: 100vh
+	background-color: $mainscreen-fone
+	background: url(../images/man.png) no-repeat
+	background-position: center center
+	background-size: cover
+	position: relative;
+	overflow: hidden;
+
+.mainscreen__button
+	display: flex
+	justify-content: center
+	align-items: center
+	position: absolute
+	top: 50%
+	left: 50%
+	background-color: #fff
+	color: $pinkcolor
+	height: 100px
+	width: 100px
+	border-radius: 50%
+	transform: translate(-50%,-50%)
+	font-size: 3em
+	&:hover
+		box-shadow: 0 0 10px rgba(0,0,0,0.2)
+
+.mainscreen__icon
+	height: 30px
+
+.mainscreen__icon .st0
+    stroke-width: 3
+    stroke-linecap: round
+    stroke-linejoin: round
+    stroke-miterlimit: 10
+    fill: $whitecolor
+    stroke: $pinkcolor
+    
+.navigation
+	position: absolute
+	top: 0
+	box-sizing: border-box
+	width: 100%
+	height: $headerheight
+	padding: 0 $border
+	display: flex
+	justify-content: flex-end
+	align-items: center
+
+.logo
+	margin-right: auto
+
+.navigation__menu
+	display: flex
+	justify-content: flex-start
+	flex-wrap: wrap
+
+.navigation__item
+	text-decoration: none
+	list-style-type: none
+	margin-left: 20px
+	font-size: 15px
+
+.navigation__anchor
+	text-decoration: none
+	font-family: GothamPro-Medium
+	text-transform: uppercase
+	color: $fontcolor
+	&:hover
+		color: $pinkcolor
+
+.navigation__lang
+	margin-left: 250px
+	font-family: GothamPro-Medium
+	font-size: 12px !important
+	color: $pinkcolor
+	width: 65px !important
+	background-color: rgba(0,0,0,0) !important
+	border: 2px solid #dfdfe2
+	border-radius: 50px
+	padding: 2px
+	padding-top: 2px
+	padding-bottom: 2px
+	& span
+		background-color: rgba(0,0,0,0) !important
+		border: none
+		text-transform: uppercase !important
+		font-size: 11px !important
+		& span:before
+			display: none !important
+
