@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" href="css/cs-select.css">
-    <link rel="stylesheet" href="css/cs-skin-underline.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="app/css/cs-select.css">
+    <link rel="stylesheet" href="app/css/cs-skin-underline.css">
+    <link rel="stylesheet" href="app/style.css">
+    <link rel="stylesheet" href="app/css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
@@ -427,7 +427,7 @@
                         </div>
                         <p class="comment-body">Главная тема для меня - любовь. Мы все хотим ее, но не знаем как получить, поэтому все, что мы делаем, - это всего лишь попытки найти счастье. </p>
                         <div class="comment-author">
-                            <div class="author-img-wrapper"><img class="author-img" src="images/ava.jpg" /></div>
+                            <div class="author-img-wrapper"><img class="author-img" src="app/images/ava.jpg" /></div>
                             <p class="author-name">Алексей Федоров</p>
                             <p class="author-position">CEO <span class="bold">deco.agency</span></p>
                         </div>
@@ -449,7 +449,7 @@
                         </div>
                         <p class="comment-body">Главная тема для меня - любовь. Мы все хотим ее, но не знаем как получить, поэтому все, что мы делаем, - это всего лишь попытки найти счастье. </p>
                         <div class="comment-author">
-                            <div class="author-img-wrapper"><img class="author-img" src="images/ava2.jpg" /></div>
+                            <div class="author-img-wrapper"><img class="author-img" src="app/images/ava2.jpg" /></div>
                             <p class="author-name">Алексей Федоров</p>
                             <p class="author-position">CEO <span class="bold">deco.agency</span></p>
                         </div>
@@ -471,7 +471,7 @@
                         </div>
                         <div class="video-comment-wrapper">
                             <video width="100%" height="100%" controls>
-                                <source src="video/small.mp4">
+                                <source src="app/video/small.mp4">
                             </video>
                         </div>
                         <div class="comment-author">
@@ -482,7 +482,7 @@
                 </div>
             </div>
             <div class="button-more">
-                <div class="img-more-wrapper"><img src="images/circle-arrows.jpg"></div>
+                <div class="img-more-wrapper"><img src="app/images/circle-arrows.jpg"></div>
                 <h4 class="button-more-text">ЗАГРУЗИТЬ ЕЩЕ</h4>
             </div>
         </div>
@@ -499,34 +499,34 @@
                 <form>
                     <div class="information">
                         <p><input type="text" placeholder="Имя и фамилия"></p>
-                        <p><input type="text" placeholder="Телефон*" required></p>
-                        <p><input type="text" placeholder="E-mail*" required></p>
+                        <p><input type="tel" placeholder="Телефон*" required></p>
+                        <p><input type="email" placeholder="E-mail*" required></p>
                         <p><input type="text" placeholder="Сайт"></p>
                     </div>
                 </form>
                 <div class='dropdown'>
                     <div class='dropdown__select'>
                         <label class="selectGeneral" placeholder="Меня интересует">
-  <input type="radio" name="OS">
+  <input type="radio" name="select">
 
   <div>
     <input
       type="radio"
-      name="OS"
-      value="Linux"
-      id="OS[Linux]"
+      name="select"
+      value="Other"
+      id="select[Other]"
     >
-    <label for="OS[Linux]">○&nbsp;&nbsp;&nbsp;Наведение порядка в делах</label>
+    <label for="select[Other]">○&nbsp;&nbsp;&nbsp;Наведение порядка в делах</label>
 
 
-                        <input type="radio" name="OS" value="Windows" id="OS[Windows]">
-                        <label for="OS[Windows]">○&nbsp;&nbsp;&nbsp;Правовое сопровождение деятельности</label>
+                        <input type="radio" name="select" value="Other" id="select[Other]">
+                        <label for="select[Other]">○&nbsp;&nbsp;&nbsp;Правовое сопровождение деятельности</label>
 
-                        <input type="radio" name="OS" value="Other" id="OS[Other]">
-                        <label for="OS[Other]">○&nbsp;&nbsp;&nbsp;Оптимизация договорных отношений</label>
+                        <input type="radio" name="select" value="Other" id="select[Other]">
+                        <label for="select[Other]">○&nbsp;&nbsp;&nbsp;Оптимизация договорных отношений</label>
 
-                        <input type="radio" name="OS" value="Other" id="OS[Other]">
-                        <label for="OS[Other]">○&nbsp;&nbsp;&nbsp;Разработка договоров</label>
+                        <input type="radio" name="select" value="Other" id="select[Other]">
+                        <label for="select[Other]">○&nbsp;&nbsp;&nbsp;Разработка договоров</label>
                     </div>
                     </label>
                 </div>
@@ -534,12 +534,12 @@
             </div>
             <div class="otherinf">
                 <span class="otherinf__form">Дополнительная информация</span>
-                <textarea type="text" placeholder="Введите текст..."></textarea>
+                <textarea placeholder="Введите текст..."></textarea>
             </div>
-
+            <button class='send'>Отправить</button>
         </section>
 
-        <button type="button">Отправить</button>
+
         <section class="adress">
             <h3 class="pravo">Pravo agency</h3>
             <p>01001, Киев, ул.Костельная, 9, оф.8</p>
@@ -548,22 +548,22 @@
 
             <div class="footer__social ">
                 <a href="#" class="footer__link">
-                    <div class="footer__network">
+                    <div class="footer__facebook">
                         <span class="fab fa-facebook-f"></span></div>
                 </a>
                 <a href="#" class="footer__link">
-                    <div class="footer__network">
+                    <div class="footer__twitter">
                         <span class="fab fa-twitter"></span>
                     </div>
                 </a>
                 <a href="#" class="footer__link">
-                    <div class="footer__network">
+                    <div class="footer__linkedin">
                         <span class="fab fa-linkedin-in"></span></div>
                 </a>
             </div>
 
 
-            <p class="p2015">&copy;2015, Pravo agency</p>
+            <p class="p2015">&copy;2015,<span> Pravo agency</span></p>
         </section>
 
     </section>
@@ -583,8 +583,8 @@
         }
 
     </script>
-    <script src="js/classie.js"></script>
-    <script src="js/selectFx.js"></script>
+    <script src="app/js/classie.js"></script>
+    <script src="app/js/selectFx.js"></script>
     <script>
         (function() {
             [].slice.call(document.querySelectorAll('select.cs-select')).forEach(function(el) {

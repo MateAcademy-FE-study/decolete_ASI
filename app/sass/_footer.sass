@@ -1,6 +1,6 @@
 .footer
     width: 100%;
-    margin: 0;
+
 
 .caption
     text-align: center;
@@ -37,7 +37,7 @@ form
     margin-bottom: 40px;
 
 
-input[type='text']
+input
     resize: none;
     width: 100%;
     border: none;
@@ -51,13 +51,14 @@ input[type='text']
     padding-bottom: 10px;
     text-transform: uppercase;
 
-input[type='text']:focus
+input:focus
     outline: none;
     border-bottom: 2px solid #a80c5d;
 
 
 .dropdown__select
     width: 100%;
+    margin-top: 45px;
 
 textarea
     width: 100%;
@@ -69,7 +70,7 @@ label.selectGeneral
     display: block;
     position: relative;
     width: 100%;
-    height: 50px;
+    height: 45px;
     font-weight: normal;
     margin: 2px 0;
     border: 2px solid #d6d6d6;
@@ -155,7 +156,7 @@ label.selectGeneral input[type="radio"]:checked ~ div
     top: 40px;
     z-index: 999;
     overflow-y: auto;
-    box-shadow: -2px 0 0 #d6d6d6, 3px 0 0 #d6d6d6;
+    box-shadow: -2px 0 0 #d6d6d6, 2px 0 0 #d6d6d6;
     border-top: 2px solid #d6d6d6;
     border-bottom: 2px solid #d6d6d6;
 
@@ -194,15 +195,14 @@ textarea
     border: 2px solid #dcdcdc;
     transition: border 0.5s;
     resize: none;
-    margin-bottom: 150px;
 
 textarea:focus
     outline: none;
     border: 2px solid #a80c5d;
 
-button[type="button"]
-    display: block;
-    padding: 20px 60px 20px 60px;
+.send
+    width: 180px;
+    height: 50px;
     background-color: #a80c5d;
     border-radius: 40px;
     color: #ffffff;
@@ -211,8 +211,10 @@ button[type="button"]
     border: 0;
     font-weight: 900;
     text-transform: uppercase;
-    clear: both;
-    margin: 20px auto;
+    position: relative;
+    left: 50%;
+    margin-left: -90px;
+    margin-top: 150px;
 
 .adress
     font-family: GothamPro;
@@ -221,8 +223,6 @@ button[type="button"]
     font-weight: 500;
     color: #000000;
     margin-top: 50px;
-
-
 
 .adress a
     color: #a80c5d;
@@ -244,23 +244,64 @@ button[type="button"]
 .footer__social a
     color: #c5c5c5;
 
-.footer__network
+.footer__facebook
     width: 40px;
     height: 40px;
     border: 2px solid #c5c5c5;
+    color: #c5c5c5;
     border-radius: 50%;
-    text-align: center;
     box-sizing: border-box;
     margin: 5px;
     padding-top: 9px;
 
-.footer__network:hover
-    border-color: #336bbc;
-    color: #336bbc;
+.footer__facebook:hover
+    border: 2px solid #3b5998;
+    color: #3b5998;
+
+.footer__twitter
+    width: 40px;
+    height: 40px;
+    border: 2px solid #c5c5c5;
+    color: #c5c5c5;
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin: 5px;
+    padding-top: 9px;
+
+.footer__twitter:hover
+    border: 2px solid #00aced;
+    color: #00aced;
+
+.footer__linkedin
+    width: 40px;
+    height: 40px;
+    border: 2px solid #c5c5c5;
+    color: #c5c5c5;
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin: 5px;
+    padding-top: 9px;
+
+.footer__linkedin:hover
+    border: 2px solid #dd4b39;
+    color: #dd4b39;
+
 
 .p2015
     font-size: 12px;
     text-align: center;
     font-family: GothamPro-Light;
     color: #3f4147;
+    span
+        font-weight: 700;
 
+@media screen and (max-width: 960px)
+    .otherinf
+        clear: both;
+        width: 100%;
+    
+    .leftpart
+        width: 100%;
+    
+    .send
+        margin-top: 50px;
