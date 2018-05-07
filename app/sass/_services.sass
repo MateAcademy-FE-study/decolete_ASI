@@ -2,55 +2,64 @@
   font-family: GothamPro, sans-serif
   width: 100%
   margin: 0 auto
-.comments
-  font-family: sans-serif
+
 .section-title
   padding: 40px 0px 40px 0px
   text-align: center
   width: 100%
+
 .section-title__line
   height: 2px
   width: 40px
   background-color: #a80c5d
   border: none
   margin: 0px auto
+
 .section-title__headline
   font-family: GothamPro-Bold
   margin: 20px auto
   text-transform: uppercase
+
 .section-title__subtitle
   width: 50%
   margin: 20px auto
+
 .bold
   font-weight: bold
+
 .service-list
   width: 100%
   display: flex
   flex-wrap: wrap
   justify-content: space-between
+
 .service-item-wrapper
   width: 50%
   padding: 60px 0px 30px 0px
   box-sizing: border-box
+
 .service-item
   box-sizing: border-box
   width: 70%
   margin: 0px 10% 0px 20%
   min-width: 300px
-  &:hover .service-icon
+  &:hover .service-item__icon
     background-color: #a70c5d
     color: #ffffff
-.service-image-wrapper
+
+.service-item__image
   width: 40px
   height: 100%
   display: inline-block
   padding-right: 20px
   vertical-align: top
+
 .st0a
   fill: none
   stroke: #727478
   stroke-width: 0.75
   stroke-miterlimit: 10
+
 .st1a
   fill: none
   stroke: #727478
@@ -63,20 +72,24 @@
   stroke-linecap: round
   stroke-linejoin: round
   stroke-miterlimit: 10
+
 .st3
   stroke: #727478
   stroke-width: 0.2758
   stroke-miterlimit: 10
+
 .st4
   fill: #727478
   stroke: #727478
   stroke-width: 0.2
   stroke-miterlimit: 10
+
 .fl0
   fill: #727478
   stroke: #727478
   stroke-width: 0.2758
   stroke-miterlimit: 10
+
 .service-item:hover
   .svg__st
     stroke: #a70c5d
@@ -85,30 +98,37 @@
     fill: #a70c5d
   .st4
     fill: #a70c5d
+
 .text-color
   color: #727478
-.service-content
+
+.service-item__content
   display: inline-block
   width: calc(100% - 70px)
   text-align: left
-.service-headline
+
+.service-item__headline
   padding: 10px 0px
-.service-title
+
+.service-item__title
   display: inline-block
   margin: 0px
   width: 60%
   font-size: 15px
   font-family: GothamPro-Bold
   text-transform: uppercase
-.service-text
+
+.service-item__text
   padding: 20px 0px 0px 0px
-.service-text-list
+
+.service-item__list
   margin: 0px
   padding-left: 15px
   list-style-image: url(images/EllipsePink.png)
   li
     padding-left: 10px
-.service-icon
+
+.service-item__icon
   width: 30px
   height: 30px
   border: 2px solid #a80c5d
@@ -120,6 +140,7 @@
   float: right
   font-family: serif
   font-weight: bold
+
 @media screen and (max-width: 900px)
   .service-item-wrapper
     width: 100%
