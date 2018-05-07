@@ -342,7 +342,7 @@ body {
 .section-title__line {
   height: 2px;
   width: 40px;
-  background-color: #a80c5d;
+  background-color: #a70c5d;
   border: none;
   margin: 0px auto;
 }
@@ -364,9 +364,11 @@ body {
 
 .service-list {
   width: 100%;
+  max-width: 1600px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin: 0 auto;
 }
 
 .service-item-wrapper {
@@ -476,6 +478,7 @@ body {
 
 .service-item__text {
   padding: 20px 0px 0px 0px;
+  color: #727478;
 }
 
 .service-item__list {
@@ -491,7 +494,7 @@ body {
 .service-item__icon {
   width: 30px;
   height: 30px;
-  border: 2px solid #a80c5d;
+  border: 2px solid #a70c5d;
   border-radius: 20px;
   float: right;
   display: flex;
@@ -539,6 +542,7 @@ body {
 
 .comment {
   min-width: 300px;
+  width: 300px;
   padding-top: 30px;
   margin: 0px 20px;
 }
@@ -566,6 +570,7 @@ body {
 
 .comment__body {
   margin: 15px 0px 30px 0px;
+  color: #727478;
 }
 
 .comment__author-img {
