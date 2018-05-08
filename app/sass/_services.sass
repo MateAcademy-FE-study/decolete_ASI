@@ -1,0 +1,155 @@
+.services
+  font-family: GothamPro, sans-serif
+  width: 100%
+  margin: 0 auto
+
+.section-title
+  padding: 40px 0px 40px 0px
+  text-align: center
+  width: 100%
+
+.section-title__line
+  height: 2px
+  width: 40px
+  background-color: $pinkcolor
+  border: none
+  margin: 0px auto
+
+.section-title__headline
+  font-family: GothamPro-Bold
+  margin: 20px auto
+  text-transform: uppercase
+
+.section-title__subtitle
+  width: 50%
+  margin: 20px auto
+
+.bold
+  font-weight: bold
+
+.service-list
+  width: 100%
+  max-width: 1600px
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  margin: 0 auto
+
+.service-item-wrapper
+  width: 50%
+  padding: 60px 0px 30px 0px
+  box-sizing: border-box
+
+.service-item
+  box-sizing: border-box
+  width: 70%
+  margin: 0px 10% 0px 20%
+  min-width: 300px
+  &:hover .service-item__icon
+    background-color: $pinkcolor
+    color: $whitecolor
+
+.service-item__image
+  width: 40px
+  height: 100%
+  display: inline-block
+  padding-right: 20px
+  vertical-align: top
+
+.st0a
+  fill: none
+  stroke: $serviceiconcolor
+  stroke-width: 0.75
+  stroke-miterlimit: 10
+
+.st1a
+  fill: none
+  stroke: $serviceiconcolor
+  stroke-width: 0.5
+  stroke-miterlimit: 10
+.st2a
+  fill: none
+  stroke: $serviceiconcolor
+  stroke-width: 0.75
+  stroke-linecap: round
+  stroke-linejoin: round
+  stroke-miterlimit: 10
+
+.st3
+  stroke: $serviceiconcolor
+  stroke-width: 0.2758
+  stroke-miterlimit: 10
+
+.st4
+  fill: $serviceiconcolor
+  stroke: $serviceiconcolor
+  stroke-width: 0.2
+  stroke-miterlimit: 10
+
+.fl0
+  fill: $serviceiconcolor
+  stroke: $serviceiconcolor
+  stroke-width: 0.2758
+  stroke-miterlimit: 10
+
+.service-item:hover
+  .svg__st
+    stroke: $pinkcolor
+  .svg__fl
+    stroke: $pinkcolor
+    fill: $pinkcolor
+  .st4
+    fill: $pinkcolor
+
+.text-color
+  color: $serviceiconcolor
+
+.service-item__content
+  display: inline-block
+  width: calc(100% - 70px)
+  text-align: left
+
+.service-item__headline
+  padding: 10px 0px
+
+.service-item__title
+  display: inline-block
+  margin: 0px
+  width: 60%
+  font-size: 15px
+  font-family: GothamPro-Bold
+  text-transform: uppercase
+
+.service-item__text
+  padding: 20px 0px 0px 0px
+  color: $serviceiconcolor
+
+.service-item__list
+  margin: 0px
+  padding-left: 15px
+  list-style-image: url(images/EllipsePink.png)
+  li
+    padding-left: 10px
+
+.service-item__icon
+  width: 30px
+  height: 30px
+  border: 2px solid $pinkcolor
+  border-radius: 20px
+  float: right
+  display: flex
+  align-items: center
+  justify-content: center
+  float: right
+  font-family: serif
+  font-weight: bold
+
+@media screen and (max-width: 900px)
+  .service-item-wrapper
+    width: 100%
+  .service-item
+    width: 80%
+    margin: 0 auto
+  .comments-list
+    flex-direction: column
+    align-items: center

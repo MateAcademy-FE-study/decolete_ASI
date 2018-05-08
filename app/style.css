@@ -96,6 +96,7 @@ html, body, ul{
     box-sizing: border-box;
     width: 70%;
     margin: 0px 10% 0px 20%;
+    min-width: 300px;
 }
 
 .service-item:hover .service-icon {
@@ -111,9 +112,9 @@ html, body, ul{
     vertical-align: top;
 }
 
-.st0{fill:none;stroke:#727478;stroke-width:0.75;stroke-miterlimit:10;}
-.st1{fill:none;stroke:#727478;stroke-width:0.5;stroke-miterlimit:10;}
-.st2{fill:none;stroke:#727478;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+.st0a{fill:none;stroke:#727478;stroke-width:0.75;stroke-miterlimit:10;}
+.st1a{fill:none;stroke:#727478;stroke-width:0.5;stroke-miterlimit:10;}
+.st2a{fill:none;stroke:#727478;stroke-width:0.75;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
 .st3{stroke:#727478;stroke-width:0.2758;stroke-miterlimit:10;}
 .st4{fill: #727478;stroke:#727478;stroke-width:0.2;stroke-miterlimit:10;}
 .fl0{fill:#727478;stroke:#727478;stroke-width:0.2758;stroke-miterlimit:10;}
