@@ -98,7 +98,8 @@
 		var self = this, options = '', createOptionHTML = function(el) {
 			var optclass = '', classes = '', link = '';
 
-			if( el.selectedOpt && !this.foundSelected && !this.hasDefaultPlaceholder ) {
+			if( el.selectedOpt && !this.foundSelected && !this.hasDefaultPlaceholder
+			 ) {
 				classes += 'cs-selected ';
 				this.foundSelected = true;
 			}
