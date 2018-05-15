@@ -1,4 +1,5 @@
 $(window).resize(function(){
-    $("#navigation__lang").hide();
-   // alert('Размеры окна браузера изменены.');
+  //  $('.removeclass').removeClass('removeclass');
+    //alert('Размеры окна браузера изменены.');
+   // console.log(_initEvents);
 });

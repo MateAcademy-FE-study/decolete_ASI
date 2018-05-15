@@ -155,6 +155,10 @@
 		this.selPlaceholder.addEventListener( 'click', function() {
 			self._toggleSelect();
 		} );
+			//closeselect
+		window.addEventListener('resize', function() {
+			if( self._isOpen()) self._toggleSelect();
+		} );
 
 		// clicking the options
 		this.selOpts.forEach( function(opt, idx) {
