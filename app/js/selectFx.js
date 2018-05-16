@@ -67,11 +67,12 @@
 		// check if we are using a placeholder for the native select box
 		// we assume the placeholder is disabled and selected by default
 		var selectedOpt = this.el.querySelector( 'option[selected]' );
+	
 		this.hasDefaultPlaceholder = selectedOpt && selectedOpt.disabled;
-
+		
 		// get selected option (either the first option with attr selected or just the first option)
 		this.selectedOpt = selectedOpt || this.el.querySelector( 'option' );
-
+		
 		// create structure
 		this._createSelectEl();
 
@@ -83,25 +84,31 @@
 		
 		// current index
 		this.current = this.selOpts.indexOf( this.selEl.querySelector( 'li.cs-selected' ) ) || -1;
-		
+
 		// placeholder elem
 		this.selPlaceholder = this.selEl.querySelector( 'span.cs-placeholder' );
 
 		// init events
 		this._initEvents();
+		//console.log(this.selectedOpt);
 	}
 
 	/**
 	 * creates the structure for the select element
 	 */
 	SelectFx.prototype._createSelectEl = function() {
+		//console.log(el); 
+		var count = 1;
 		var self = this, options = '', createOptionHTML = function(el) {
 			var optclass = '', classes = '', link = '';
-
-			if( el.selectedOpt && !this.foundSelected && !this.hasDefaultPlaceholder
+			console.log(el);
+			//console.log(el.selectedOpt);
+			if(count===1
 			 ) {
+				console.log('init');
 				classes += 'cs-selected ';
-				this.foundSelected = true;
+				count +=1;
+				//this.foundSelected = true;
 			}
 			// extra classes
 			if( el.getAttribute( 'data-class' ) ) {
