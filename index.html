@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="app/css/cs-select.css">
     <link rel="stylesheet" href="app/css/cs-skin-underline.css">
     <link rel="stylesheet" href="app/style.css">
+    <link rel="stylesheet" href="app/css/animate.css">
     <link rel="stylesheet" href="app/css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
@@ -15,8 +16,8 @@
 </head>
 
 <body>
-    <div class="mainscreen">
-        <a href="" class="mainscreen__button">
+    <div class="mainscreen ">
+        <a href="" class="mainscreen__button animated bounceInLeft">
             <?xml version="1.0" encoding="utf-8"?>
             <!-- Generator: Adobe Illustrator 19.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
             <svg class="mainscreen__icon" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 23.8 29.3" style="enable-background:new 0 0 23.8 29.3;" xml:space="preserve">
@@ -156,15 +157,15 @@
                 </svg>
                 <div class="menu-wrapper">
                     <input type="checkbox" id ="check-menu">
-                    <label class = "menu_label" for="check-menu">Menu</label>
+                    <label class = "menu_label" for="check-menu">Меню</label>
                     <div class="burger-line"></div>
                     <div class="burger-line"></div>
                     <div class="burger-line"></div>
                     <div class="burger-line"></div>
-                    <nav class="navigation__menu">
-                            <a class="navigation__anchor" href="#">Услуги и цены</a>
-                            <a class="navigation__anchor" href="#">Отзывы</a>
-                            <a class="navigation__anchor" href="#">Контакты</a>
+                    <nav class="navigation__menu" id="menu">
+                            <a class="navigation__anchor" href="#services">Услуги и цены</a>
+                            <a class="navigation__anchor" href="#comments">Отзывы</a>
+                            <a class="navigation__anchor" href="#contacts">Контакты</a>
                     </nav>
                 </div>
                 <select class=" navigation__lang cs-select cs-skin-underline removeclass">
@@ -175,7 +176,7 @@
             </nav>
         </header>
         <section class="slogan">
-            <h1 class="slogan__header">Правовое сопровождение малого ИТ-бизнеса</h1>
+            <h1 class="slogan__header  ">Правовое сопровождение малого ИТ-бизнеса</h1>
             <p class="slogan__text">Зачастую интернет-проекты, разработчики, маркетологи, дизайнеры, стартаперы и другие IT-специалисты не уделяют должного внимания правовым аспектам своей деятельности.
                 <br>
                 <br>Но документы <strong>должны быть в порядке</strong>, и мы в этом поможем.</p>
@@ -191,7 +192,7 @@
                 <span>Услуги и цены</span></a>
         </section>
     </div>
-    <section class="services">
+    <section class="services" id="services">
         <header class="section-title">
             <h2 class="section-title__headline">УСЛУГИ И ЦЕНЫ</h2>
             <hr class="section-title__line">
@@ -369,7 +370,7 @@
             </div>
         </div>
     </section>
-    <section class="comments">
+    <section class="comments" id="comments">
         <header class="section-title">
             <h2 class="section-title__headline">ОТЗЫВЫ</h2>
             <hr class="section-title__line">
@@ -448,7 +449,7 @@
         </div>
     </section>
     <!--          Ilja Boltenkow footer index.html           -->
-    <section class="footer">
+    <section class="footer" id="contacts">
         <header class="section-title">
             <h2 class="section-title__headline">Запрос на услуги</h2>
             <hr class="section-title__line">
@@ -540,6 +541,8 @@
         })();
 
     </script>
+    <script src="app/js/jquery-1.11.1.min.js"></script>
+    <script src="app/js/scroll.js"></script>
 </body>
 
 </html>
