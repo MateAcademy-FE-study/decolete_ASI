@@ -81,7 +81,7 @@
 	.mainscreen__button
 		display: none
 	.navigation
-		height: $headerheightxs;
+		//height: $headerheightxs;
 		padding: 0 $borderxs;
 	.slogan
 		padding: 0 $borderxs;
@@ -99,19 +99,112 @@
 	.navigation__menu
 		padding-top: 50px;
 		width: 100%;
-	.navigation__item
+	.navigation__anchor
 		width: 100%;
 		padding-bottom: 20px;
 		margin: 0 auto;
-	.navigation__item:last-child
-		padding-bottom: 0;
 	.navigation__lang
 		position: absolute !important
 		top: 0
 		right: 20px
 		margin-right: calc($borderxs - 20px);
 		margin-top: 15px;
+	.menu-wrapper
+		margin: 0 auto;
+		margin-top: 70px;
+		width: 70%;
+		position: relative;
+		color: $fontcolor;
+		text-transform: uppercase;
+		text-align: center;
+		height: 30px;
+	#check-menu
+    	display: none;
+	.menu_label
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		cursor: pointer;
+		z-index: 2;
+		line-height: 40px;
+		font-family: GothamPro-Medium, sans-serif;
+		color: $pinkcolor;
+		font-size: 20px;
+		transition: .5s all;
+
+	.burger-line
+		position: absolute;
+		top: 0;
+		right: 10px;
+		width: 35px;
+		height: 4px;
+		border-radius: 50px;
+		background-color: #dfdfe2;
+		transition: .5s all;
+
+	.burger-line:nth-of-type(1)
+    	top: 8px;
+	
+	.burger-line:nth-of-type(2), .burger-line:nth-of-type(3)
+    	top: 18px;
+	
+	.burger-line:nth-of-type(4)
+    	top: 28px;	
+
+	.navigation__menu
+		display: block;
+		position: absolute;
+		width: 100%;
+		bottom: 0;
+		left: 0;
+		transform: translateY(100%);
+		max-height: 0;
+		font-size: 16;
+		overflow: hidden;
+		transition: .5s all;
+	
+	#check-menu:checked ~ .burger-line:nth-of-type(3)
+    	transform: rotate(-45deg);
+
+	.navigation__anchor
+		display: block;
+		width: 100%;
+		padding: 10px 0;
+		text-decoration: none;
+		color: $fontcolor;
+		border-radius: 50px;
+		
+
+	.navigation__anchor:hover
+		background-color: rgba(167,12,93,1);
+		color: #ffffff;
+
+	#check-menu:checked ~ .navigation__menu
+		max-height: 500px;
+		font-size: 16px;
+
+
+
+	#check-menu:checked ~ .burger-line:nth-of-type(1)
+		display: none;
+
+	#check-menu:checked ~ .burger-line:nth-of-type(2)
+		transform: rotate(45deg);
+ 
+	#check-menu:checked ~ .burger-line:nth-of-type(4)
+		display: none;
+		top: 0;
+
+	#check-menu:checked ~ .menu_label, #check-menu:checked ~ .burger-line
+		margin-top: -50px;
+	#check-menu:checked ~ .navigation__menu 
+		transform: translateY(70px);
+
 	.slogan
+		padding-top: 200px;
 		display: block
 	.slogan__header
 		margin: 0 auto
@@ -147,6 +240,14 @@
 		opacity: 0.5;
 	.navigation
 		padding: 0 $borderm;
+	.navigation__menu
+		justify-content: flex-end;
+	.navigation__lang	
+		margin-left: 100px;
+		margin-top: 0px;
+	#check-menu, .menu_label
+		display: none;
+	
 
 @media (min-width: 992px) 
 	.slogan
@@ -154,3 +255,10 @@
 		padding-bottom: 0;
 	.mainscreen
 		min-height: 100vh;
+	.navigation__lang	
+		margin-left: 200px;
+	#check-menu, .menu_label
+		display: none;
+
+
+ 

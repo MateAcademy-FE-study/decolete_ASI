@@ -43,7 +43,7 @@ div.cs-select:focus {
 .cs-select .cs-selected span::after {
 	speak: none;
 	position: absolute;
-	top: 50%;
+	top: 45%;
 	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
 	-webkit-font-smoothing: antialiased;

@@ -38,8 +38,8 @@ div.cs-skin-underline {
 }
 
 .cs-skin-underline.cs-active > span::after {
-	-webkit-transform: translate3d(0,-50%,0) rotate3d(0,0,1,270deg);
-	transform: translate3d(0,-50%,0) rotate3d(0,0,1,270deg);
+	-webkit-transform: translate3d(0,-50%,0) rotate3d(0,0,1,320deg);
+	transform: translate3d(0,-50%,0) rotate3d(0,0,1,320deg);
 }
 
 .cs-skin-underline .cs-options {

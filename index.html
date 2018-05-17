@@ -24,7 +24,7 @@
             </svg>
         </a>
         <header>
-            <nav class="navigation">
+            <div class="navigation">
                 <?xml version="1.0" encoding="utf-8"?>
                 <!-- Generator: Adobe Illustrator 19.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
                 <svg class="logo" version="1.1" id="Layer_1" width="110px" height="51px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 232.6 109.4" style="enable-background:new 0 0 232.6 109.4;" xml:space="preserve">
@@ -154,17 +154,23 @@
                         </g>
                     </g>
                 </svg>
-                <ul class="navigation__menu ">
-                    <li class="navigation__item"><a class="navigation__anchor" href="#">Услуги и цены</a></li>
-                    <li class="navigation__item"><a class="navigation__anchor" href="#">Отзывы</a></li>
-                    <li class="navigation__item"><a class="navigation__anchor" href="#">Контакты</a></li>
-                </ul>
-                <select class=" navigation__lang cs-select cs-skin-underline">
-                    <option value="1" selected>ru</option>
-                    <option value="2">eng</option>
-                    <option value="3">pol</option>
-                    <option value="4">uk</option>
-                    <option value="5">lat</option>
+                <div class="menu-wrapper">
+                    <input type="checkbox" id ="check-menu">
+                    <label class = "menu_label" for="check-menu">Menu</label>
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                    <div class="burger-line"></div>
+                    <nav class="navigation__menu">
+                            <a class="navigation__anchor" href="#">Услуги и цены</a>
+                            <a class="navigation__anchor" href="#">Отзывы</a>
+                            <a class="navigation__anchor" href="#">Контакты</a>
+                    </nav>
+                </div>
+                <select class=" navigation__lang cs-select cs-skin-underline removeclass">
+                    <option  value="1" selected>ru</option>
+                    <option  value="2">eng</option>
+                    <option  value="3">uk</option>
                 </select>
             </nav>
         </header>
@@ -173,7 +179,7 @@
             <p class="slogan__text">Зачастую интернет-проекты, разработчики, маркетологи, дизайнеры, стартаперы и другие IT-специалисты не уделяют должного внимания правовым аспектам своей деятельности.
                 <br>
                 <br>Но документы <strong>должны быть в порядке</strong>, и мы в этом поможем.</p>
-            <a href="" class="slogan__button">
+            <a href="" class="slogan__button" id="navigation__lang">
                 <?xml version="1.0" encoding="utf-8"?>
                 <svg class="slogan__icon" version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 38 38" style="enable-background:new 0 0 38 38;" xml:space="preserve">
                     <g>
