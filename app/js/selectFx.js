@@ -103,6 +103,8 @@
 			var optclass = '', classes = '', link = '';
 			console.log(el);
 			//console.log(el.selectedOpt);
+
+			//это хак, тут надо исправить
 			if(count===1
 			 ) {
 				console.log('init');
